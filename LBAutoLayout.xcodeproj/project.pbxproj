@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3215DD6F45091F161FCC0F /* libPods-LBAutoLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0E65B390EFB9F173ACC9D0 /* libPods-LBAutoLayout.a */; };
 		E84181261F60F32800622273 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E84181251F60F32800622273 /* main.m */; };
 		E84181291F60F32800622273 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E84181281F60F32800622273 /* AppDelegate.m */; };
 		E841812C1F60F32800622273 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E841812B1F60F32800622273 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		E84181341F60F32800622273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84181321F60F32800622273 /* LaunchScreen.storyboard */; };
 		E841813F1F60F32800622273 /* LBAutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E841813E1F60F32800622273 /* LBAutoLayoutTests.m */; };
 		E841814A1F60F32800622273 /* LBAutoLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E84181491F60F32800622273 /* LBAutoLayoutUITests.m */; };
+		E84181591F611B2200622273 /* LBSizeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E84181581F611B2200622273 /* LBSizeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0E65B390EFB9F173ACC9D0 /* libPods-LBAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBAutoLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BB935912858696D776DAEA /* Pods-LBAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAutoLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBAutoLayout/Pods-LBAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
+		72922FF23E30102B1B01290F /* Pods-LBAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAutoLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBAutoLayout/Pods-LBAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
 		E84181211F60F32800622273 /* LBAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84181251F60F32800622273 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E84181271F60F32800622273 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		E84181451F60F32800622273 /* LBAutoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBAutoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84181491F60F32800622273 /* LBAutoLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBAutoLayoutUITests.m; sourceTree = "<group>"; };
 		E841814B1F60F32800622273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84181571F611B2200622273 /* LBSizeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSizeButton.h; sourceTree = "<group>"; };
+		E84181581F611B2200622273 /* LBSizeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSizeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3215DD6F45091F161FCC0F /* libPods-LBAutoLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E19D40867F78D0DC7AE94C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72922FF23E30102B1B01290F /* Pods-LBAutoLayout.debug.xcconfig */,
+				63BB935912858696D776DAEA /* Pods-LBAutoLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8A75710EC7C15767BD3FE5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0E65B390EFB9F173ACC9D0 /* libPods-LBAutoLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E84181181F60F32800622273 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				E841813D1F60F32800622273 /* LBAutoLayoutTests */,
 				E84181481F60F32800622273 /* LBAutoLayoutUITests */,
 				E84181221F60F32800622273 /* Products */,
+				2E19D40867F78D0DC7AE94C6 /* Pods */,
+				C8A75710EC7C15767BD3FE5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,8 @@
 				E84181281F60F32800622273 /* AppDelegate.m */,
 				E841812A1F60F32800622273 /* ViewController.h */,
 				E841812B1F60F32800622273 /* ViewController.m */,
+				E84181571F611B2200622273 /* LBSizeButton.h */,
+				E84181581F611B2200622273 /* LBSizeButton.m */,
 				E841812D1F60F32800622273 /* Main.storyboard */,
 				E84181301F60F32800622273 /* Assets.xcassets */,
 				E84181321F60F32800622273 /* LaunchScreen.storyboard */,
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E841814E1F60F32800622273 /* Build configuration list for PBXNativeTarget "LBAutoLayout" */;
 			buildPhases = (
+				495BCC652976A42A1F00270E /* [CP] Check Pods Manifest.lock */,
 				E841811D1F60F32800622273 /* Sources */,
 				E841811E1F60F32800622273 /* Frameworks */,
 				E841811F1F60F32800622273 /* Resources */,
+				C2F4892EDB7B75B1C74E1B9E /* [CP] Embed Pods Frameworks */,
+				979EDA01E38A3A7160A58C57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +300,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		495BCC652976A42A1F00270E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBAutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979EDA01E38A3A7160A58C57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBAutoLayout/Pods-LBAutoLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F4892EDB7B75B1C74E1B9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBAutoLayout/Pods-LBAutoLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E841811D1F60F32800622273 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +358,7 @@
 			files = (
 				E841812C1F60F32800622273 /* ViewController.m in Sources */,
 				E84181291F60F32800622273 /* AppDelegate.m in Sources */,
+				E84181591F611B2200622273 /* LBSizeButton.m in Sources */,
 				E84181261F60F32800622273 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +506,7 @@
 		};
 		E841814F1F60F32800622273 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72922FF23E30102B1B01290F /* Pods-LBAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LBAutoLayout/Info.plist;
@@ -433,6 +518,7 @@
 		};
 		E84181501F60F32800622273 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BB935912858696D776DAEA /* Pods-LBAutoLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LBAutoLayout/Info.plist;
@@ -507,6 +593,7 @@
 				E84181501F60F32800622273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E84181511F60F32800622273 /* Build configuration list for PBXNativeTarget "LBAutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +602,7 @@
 				E84181531F60F32800622273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E84181541F60F32800622273 /* Build configuration list for PBXNativeTarget "LBAutoLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +611,7 @@
 				E84181561F60F32800622273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
